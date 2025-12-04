@@ -5,7 +5,7 @@ import torch
 
 app = FastAPI()
 
-MODEL_NAME = "gpt2"  # Swap to another model if needed
+MODEL_NAME = "sshleifer/tiny-gpt2" # Swap to another model if needed
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
